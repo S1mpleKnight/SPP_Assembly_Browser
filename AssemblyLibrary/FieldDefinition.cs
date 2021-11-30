@@ -32,11 +32,6 @@ namespace AssemblyLibrary
                     TypeModifier.GetAccessModifier(fieldInfo.GetType()),
                     fieldInfo.FieldType.Name,
                     fieldInfo.Name);
-
-
-               //this.fieldDefinition += (fieldInfo.FieldType.IsGenericType ?
-               //     String.Format("{0}<{1}>", fieldInfo.ReflectedType.Name, GetGenericType(fieldInfo.FieldType.GenericTypeArguments)) :
-               //     fieldInfo.ReflectedType.Name);
           }
 
           private string GetGenericType(Type[] type)
