@@ -34,8 +34,6 @@ namespace Tests
                classType = typeof(TestClass);
           }
 
-
-
           [TestMethod]
           public void TestNamespaceExists()
           {
