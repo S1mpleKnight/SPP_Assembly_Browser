@@ -14,7 +14,6 @@ namespace AssemblyLibrary
                string result = "";
                TypeAttributes attr = type.Attributes;
 
-               // To test for visibility attributes, you must use the visibility mask.
                TypeAttributes visibility = attr & TypeAttributes.VisibilityMask;
                switch (visibility)
                {
@@ -74,7 +73,6 @@ namespace AssemblyLibrary
                string result = "";
                TypeAttributes attr = type.Attributes;
 
-               // Use the class semantics mask to test for class semantics attributes.
                TypeAttributes classSemantics = attr & TypeAttributes.ClassSemanticsMask;
 
                switch (classSemantics)
